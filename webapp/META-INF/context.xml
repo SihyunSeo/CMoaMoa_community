@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource name='jdbc/moa'
+	auth = "Container"
+	type = "javax.sql.DataSource"
+	username = "JSP"
+	password = "dblab6100!@#"
+	driverClassName = "com.mysql.jdbc.Driver"
+	url = "jdbc:mysql://203.252.240.73:3306/moa?serverTimezone=UTC"
+	factory = "org.apache.tomcat.dbcp.dbcp2.BasicDataSourceFactory"
+	maxTotal = "16"
+	maxIdle = "4"
+	maxWaitMillis = "-1"/>
+</Context>

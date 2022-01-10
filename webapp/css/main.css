@@ -1,0 +1,142 @@
+.main_board{
+	width: 100%;
+	margin-top: 50px;
+	border-collapse: separate;
+	border-spacing: 30px;
+}
+.main_board td{
+	position: relative;
+	height: 1px;
+	vertical-align: top;
+}
+.main_board td .item-card:hover{
+	transition: top 0.5s;
+	top: -5px;
+	box-shadow: 10px 10px 10px rgba(50, 50, 50, 0.1),
+	-5px -5px 10px rgba(50, 50, 50, 0.1);
+}
+.main_board td .item-card{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	vertical-align: top;
+	background: WHITE;
+	border-radius: 10px;
+  	box-shadow: 10px 10px 10px rgba(150, 150, 150, 0.1),
+  	-5px -5px 10px rgba(150, 150, 150, 0.1);
+	transition: top 0.5s; /* only transition top property */
+	top: 0;
+}
+
+.main-board-title{
+	display: block;
+	margin: 15px;
+}
+.main-board-title a{
+	margin-left: 40px;
+	font-family: '나눔스퀘어B' !important;
+	font-size: 20px;
+}
+
+.main-board-contain li{
+	list-style: inside !important;
+}
+.main-board-contain{
+ 	display: table-cell;
+ 	vertical-align: middle;
+	padding: 15px;
+	font-size: 18px;
+}
+.main-board-contain .contain_board_title{
+	font-size: 14px;
+	line-height: 30px;
+}
+
+.main_board li{
+	list-style: none;
+}
+
+.main_board .login_box{
+	position: relative;
+	padding: 15px;
+	text-align: center;
+}
+.main_board .login_box img{
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 15px;
+	left: 15px;
+}
+.main_board .login_box .btn-box{
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin-top: 60px;
+	border-radius: 15px;
+	margin-left: 2px;
+	margin-right: 2px;
+	line-height: 30px;
+	color: white;
+	cursor: pointer;
+	font-size: 13px;
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+}
+
+.main_news_box{
+	margin-top: 20px;
+	padding: 40px;
+	text-align: center;
+	justify-cotent: space-between;
+	background: #ECEFF4;
+}
+.main_news_box .news_img{
+	width: 180px;
+	height: 320px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.speaker_img{
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	left: 15px;
+	top: 15px;
+}
+
+.main_board .banner .main-board-title{
+	color: white;
+	margin: 30px;
+	font-size: 20px;
+}
+.main_board .banner{
+	overflow: hidden;
+	height: 240px;
+}
+.main_board .banner-left{
+	background: #AC4CD8;
+}
+.main_board .banner-right{
+	background: #3C64FF;
+}
+.main_board .banner .banner-btn{
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	left: 30px;
+	bottom: 30px;
+	border-radius: 25px;
+	text-align: center;
+	line-height: 50px;
+	background: black;
+	color: white;
+	cursor: pointer;
+}
+.main_board .banner img{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	right: 30px;
+	bottom: 30px;
+}

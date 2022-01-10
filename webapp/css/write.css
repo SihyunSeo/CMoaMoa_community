@@ -1,0 +1,329 @@
+* {
+	margin : 0;
+	padding : 0;
+}
+a{
+	text-decoration: none;
+	color : inherit;
+}
+
+.body-box input[type=text]{
+	display: block;
+	width: 100%;
+	height: 60px;
+	border: none;
+	outline: none;
+	padding-left: 15px;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 24px;
+}
+.body-box  input[type=text]:hover{
+	transition: all 0.3s ease 0s;
+	border: 2px solid #320DFD;
+}
+.body-box .board_btn_box .activate-btn{
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	color: white;
+}
+.body-box input[type=file]:not(.update-file){
+	position: absolute;
+	top: 115px;
+	right: 15px;
+}
+.body-box .update-file{
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	left: 0;
+	background: none;
+	cursor: pointer;
+	z-index: 90;
+	opacity: 0;
+}
+.body-box .update-file+div{
+	position: absolute;
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	left: 0;
+	text-decoration: underline;
+	z-index: 80;
+}
+
+.body-box .contain{
+	display: block;
+	width: 100%;
+	margin: 20px auto;
+	padding: 20px;
+	border: none;
+	outline: none;
+	line-height: 30px;
+	font-size: 20px;
+
+    word-break: keep-all;
+    white-space: pre-line;
+}
+.body-box textarea:hover{
+	transition: all 0.3s ease 0s;
+	border: 2px solid #320DFD;
+}
+.body-box hr{
+	margin: 30px auto;
+}
+
+.body-box .button_box{
+	text-align: center;	
+}
+.body-box .button_box button{
+	width: 100px;
+	height: 50px;
+	font-size: 20px;
+ 	border: none;
+ 	border-radius: 10px;
+ 	cursor: pointer;
+}
+.body-box .button_box button[type=button]{
+	background: white;
+	color: #320DFD;
+	border: 2px solid #D9D9D9;
+}
+.body-box .button_box button[type=submit]{
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	color: white;
+}
+
+
+#selectbox:hover{
+	transition: all 0.3s ease 0s;
+	border: 2px solid #320DFD;
+}
+#selectbox{
+	height: 25px;
+	padding-left: 15px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	
+	transition: all 0.3s ease 0s;
+	border: none;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+
+span{
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+span a{
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+span a:before,
+span a:after{
+  position: absolute;
+  content: "BUTTON";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+span a:before{
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+span a:after{
+  color: #000;
+  transform: rotateX(90deg) translateZ(25px);
+}
+span a:hover{
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.body-box .title{
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	color: black;
+	margin: 15px auto;
+}
+.body-box .name{
+	display: inline;
+	float: left;
+}
+.body-box .views,.date{
+	display: inline;
+	float: right;
+	margin-left: 15px;
+}
+.body-box .content-box{
+	display: block;
+	text-align: center;
+}
+.body-box .content-img{
+	width: 300px;
+	height: auto;
+	margin: 15px auto;
+}
+.body-box p{
+	display: block;
+	text-align: left;
+	margin: 5px auto;
+
+    word-break: keep-all;
+    white-space: pre-line;
+}
+
+.body-box .like-btn{
+	float: right;
+	width: 80px;
+	height: 40px;
+	margin: 0px 2px;
+	color: white;
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	border: none;
+ 	border-radius: 10px;
+ 	font-size: 18px;
+ 	vertical-align: top;
+	cursor: pointer;
+}
+
+.body-box .go-list-btn{
+	float: right;
+	width: 80px;
+	height: 40px;
+	margin: 15px 2px;
+	color: white;
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	border: none;
+ 	border-radius: 10px;
+ 	font-size: 18px;
+ 	vertical-align: top;
+	cursor: pointer;
+}
+.body-box .comment-box .prev-btn{
+	float: left;
+	display: block;
+	margin: 15px 2px;
+	position: relative;
+}
+.body-box .comment-box .next-btn{
+	display: block;
+	margin: 15px 2px;
+	position: relative;
+}
+.body-box .comment-box-icon{
+	margin: 30px auto;
+}
+.body-box .comment-box-icon *{
+	display: inline-block;
+	height: 30px;
+	margin: 0 5px;
+	vertical-align: top;
+	line-height: 30px;
+}
+
+.body-box .comment-box{
+	border-top: 4px solid #D9D9D9;
+	margin: 15px auto;
+}
+
+.body-box .comment-mini-box{
+	display: block;
+	margin-bottom: 40px;
+	overflow: hidden;
+}
+.body-box .comment-mini-box .comment-name{
+	float: left;
+	font-weight: bold;
+	margin-left: 15px;
+}
+.body-box .comment-mini-box .comment-date{
+	float: right;
+	margin-right: 15px;
+}
+.body-box .comment-mini-box .comment-contain{
+	position: relative;
+	display: block;
+	height: fit-content;
+	min-height: 55px;
+	margin-top: 25px;
+	padding: 15px;
+	border: 2px solid #D9D9D9;
+	font-size: 18px;
+
+    word-break: keep-all;
+    /*white-space: pre-line;*/
+    z-index: 90;
+}
+.body-box .comment-mini-box .comment-contain .modify_txt{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.body-box .comment-mini-box .comment-contain .modify_txt input{
+	height: 50px;
+	border: none !important;
+	outline: none !important;
+}
+.body-box .comment-mini-box .comment-contain .btn-left{
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	right: 80px;
+	bottom: 5px;
+	border: 2px solid gray;
+	background: white;
+	cursor: pointer;
+	z-index: 99;
+}
+.body-box .comment-mini-box .comment-contain .btn-right{
+	position: absolute;
+	width: 70px;
+	height: 30px;
+	right: 5px;
+	bottom: 5px;
+	border: 2px solid gray;
+	background: white;
+	cursor: pointer;
+	z-index: 99;
+}
+
+.body-box .comment-box form{
+	position: relative;
+	margin-top: 30px;
+}
+.body-box .comment-box input{
+	display: inline;
+	height: 60px;
+	border: 2px solid #D9D9D9;
+	font-size: 18px;
+}
+.post-comment-btn{
+	display: inline;
+	position: absolute;
+	right: 0;
+	width: 100px;
+	height: 60px;
+	color: white;
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	font-size: 17px;
+ 	border: none;
+	cursor: pointer;
+}

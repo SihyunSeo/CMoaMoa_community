@@ -1,0 +1,362 @@
+* {
+	margin : 0;
+	padding : 0;
+}
+a{
+	text-decoration: none;
+	color : inherit;
+}
+
+.body-box .image-board{
+	position: relative;
+	text-align: justify;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+}
+.body-box .title_left_img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.body-box .board_title{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 40px;
+}
+.body-box .board_btn_box{
+	display: block;
+	margin: 10px auto;
+	padding: 15px;
+	border-top: 5px solid #D9D9D9;
+	border-bottom: 5px solid #D9D9D9;
+}
+.body-box .board_btn_box button{
+	width: fit-content;
+	height: 50px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin: 5px 2px;
+	color: white;
+	font-size: 22px;
+ 	background: white;
+ 	color: black;
+ 	border: none;
+ 	border-radius: 5px;
+ 	font-weight: bold; 
+ 	cursor: pointer;
+}
+.body-box .board_btn_box button:hover{
+	transition: all 0.3s ease 0s;
+	border: 2px solid #320DFD;
+}
+.body-box .board_btn_box .activate-btn{
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	color: white;
+}
+
+.filling-empty-space-childs {
+    width:205px; /*the width of the images in this example*/
+    height:0; /*Important! for the divs to collapse should they fall in a new row*/
+}
+
+.body-box .text-board .item:hover{
+	transition: top 0.5s;
+	top: -5px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1),
+				-5px -5px 5px rgba(0, 0, 0, 0.1);
+}
+.body-box .text-board .item{
+    position: relative;
+	display: block;
+	height: fit-content;
+    min-height: 200px;
+    overflow: hidden;
+	
+	margin-top: 60px;
+	
+	transition: top 0.5s;
+	top: 0px;
+
+	box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.1),
+				-5px -5px 5px rgba(50, 50, 50, 0.1);
+				
+	cursor: pointer;
+}
+.body-box .image-board .item:hover{
+	transition: top 0.5s;
+	top: -5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.body-box .image-board .item{
+    position: relative;
+    display: inline-block;
+    width: 26%;
+    height: 500px;
+    padding: 15px;
+    margin: 30px auto;
+	transition: top 0.5s;
+	top: 0px;
+    
+    text-align: center;
+
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+    
+    cursor: pointer;
+}
+.body-box .image-board .item p{
+	margin-top: 10px;
+    font-weight: bold;	
+}
+.body-box .image-board .item img{
+    position: absolute;
+    max-width: 90%;
+    height: 400px;
+    width: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+}
+.body-box .text-board .item img{
+	position: absolute;
+    min-height: 200px;
+    width: auto;
+    max-width: 180px;
+    object-fit: contain;
+}
+.body-box .text-board .item .tit{
+	position: absolute;
+	top: 20px;
+	left: 200px;
+	/*
+	left: 50%;
+	transform: translateX(-50%);*/
+	
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.body-box .text-board .item .info{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.body-box .text-board .item .info *{
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.body-box .text-board .item .content{
+    margin-top: 70px;
+	margin-left: 200px;
+
+    word-break: keep-all;
+    white-space: pre-line;
+}
+.body-box .sort-search-box{
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.body-box .sort-search-box select,input,button,form{
+	display: inline;
+	min-width: 80px;
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 5px;
+	vertical-align: top;
+	font-size: 18px;
+}
+.body-box .sort-search-box select:hover,input:hover,button:hover{
+	transition: all 0.3s ease 0s;
+	border: 2px solid #320DFD;
+}
+.body-box .sort-search-box button{
+	color: white;
+	font-size: 18px;
+	transition: all 0.3s ease 0s;
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	border: none;
+ 	border-radius: 5px;
+	cursor: pointer;
+}
+
+.write-btn{
+	float: right;
+	width: 100px;
+	height: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+	font-size: 22px;
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	border: none;
+ 	border-radius: 5px;
+ 	cursor: pointer;
+}
+.page-box{
+	text-align: center;
+}
+.page-box .page-btn{
+	display: inline-block;
+	width: 60px;
+	min-width: 45px !important;
+	height: 30px;
+	margin: 20px auto;
+	font-size: 22px;
+ 	border-radius: 5px;
+ 	cursor: pointer;
+	color: black;
+ 	background: white;
+ 	border: linear-gradient(to right, #320DFD, #AB4BDD) 1px solid;
+}
+.page-box .current{
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	border: none;
+ 	color: white;
+}
+
+.mypage-box{
+	position: relative;
+	display: block;
+	height: 200px;
+	margin-top: 50px;
+	padding: 15px;
+  	box-shadow: 10px 10px 10px rgba(150, 150, 150, 0.1),
+  	-5px -5px 10px rgba(150, 150, 150, 0.1);
+}
+.mypage-box img{
+	display: inline-block;
+	height: 40px;
+	margin-right: 15px;
+}
+.mypage-box img{
+	display: inline-block;
+	height: 30px;
+	margin-right: 20px;
+}
+.mypage-box .title{
+	display: inline-block;
+	height: 40px;
+	vertical-align: top;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 24px;
+}
+.mypage-box .contain{
+	display: block;
+	margin: 20px;
+	line-height: 30px;
+	font-size: 20px;
+
+    word-break: keep-all;
+    white-space: pre-line;
+}
+.mypage-box button{
+	position: absolute;
+	width: 120px;
+	height: 50px;
+	right: 15px;
+	bottom: 15px;
+	font-size: 20px;
+	color: white;
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	border: none;
+ 	border-radius: 25px;
+ 	cursor: pointer;
+}
+
+.body-box .pw-check-box{
+	margin: 70px auto;
+}
+.body-box .pw-check-box .txt{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 70px;
+	line-height: 100px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+.body-box .pw-check-box .left-img{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+.body-box .pw-check-box .right-txt{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 70px;
+	line-height: 100px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.body-box .pw-check-box .blue-txt{
+	color: #5578FF;
+}
+.body-box .pw-check-box ul{
+	display: inline-block;
+	margin-left: 30px;
+	vertical-align: top;
+	font-size: 18px;
+	line-height: 30px;
+	color: gray;
+}
+.body-box .pw-check-box .pw-input-box{
+	text-align: center;
+}
+.body-box .pw-check-box .pw-input-box input:hover{
+	transition: all 0.3s ease 0s;
+	border: 2px solid #320DFD;
+}
+.body-box .pw-check-box .pw-input-box input::placeholder{
+	text-align: center;
+	color: #D9D9D9;
+}
+.body-box .pw-check-box .pw-input-box input{
+	width: 500px;
+	font: small-caption;
+	font-size: 22px;
+	border: 2px solid #D9D9D9;
+	margin: 25px 0;
+	margin-left: 50px; 
+	padding-left: 15px;
+	text-align: center;
+}
+.body-box .pw-check-box hr{
+	color: #5578FF;
+	margin: 60px auto;
+}
+.body-box .pw-check-box .btn-box{
+	margin: 0 auto;
+	text-align: center;
+}
+.body-box .pw-check-box .btn-box button{
+	width: 120px;
+	height: 50px;
+	font-size: 22px;
+ 	border: none;
+ 	border-radius: 10px;
+ 	cursor: pointer;
+}
+.body-box .pw-check-box .btn-box button[type=button]{
+	background: white;
+	color: #320DFD;
+	border: 2px solid #D9D9D9;
+}
+.body-box .pw-check-box .btn-box button[type=submit]{
+ 	background: linear-gradient(to right, #320DFD, #AB4BDD);
+ 	color: white;
+}
